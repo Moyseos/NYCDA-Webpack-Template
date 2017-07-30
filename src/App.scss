@@ -8,3 +8,85 @@
 body {
 	box-sizing: border-box;
 }
+
+.App {
+	max-width: 680px;
+	margin: 20px auto;
+	background: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24),
+	            0 2px 4px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+.Messages {
+	padding: 10px;
+	min-height: 480px;
+	text-align: left;
+}
+.Messages-message {
+	display: block;
+	margin: 10px 20px 20px;
+}
+.Messages-message-time {
+	font-size: 12px;
+	color: #AAA;
+	padding-left: 16px;
+	margin-bottom: 4px;
+}
+.Messages-message-text {
+	display: inline-block;
+	padding: 8px 12px;
+	color: #FFF;
+	background: #3498db;
+	border-radius: 24px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.MessageForm {
+	position: relative;
+	display: block;
+	padding: 10px;
+	border-top: 1px solid #CCD0D9;
+	text-align: left;
+}
+.MessageForm-message {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 54px);
+	height: 54px;
+	padding: 4px 6px;
+	font-size: 16px;
+	border: 1px solid #CCD0D9;
+	border-right: none;
+	border-top-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	resize: vertical;
+}
+.MessageForm-name {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(50% - 54px);
+	height: 54px;
+	padding: 4px 6px;
+	font-size: 16px;
+	border: 1px solid #CCD0D9;
+	border-right: none;
+	border-top-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	resize: vertical;
+}
+.MessageForm-send {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	width: 54px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: #3498db;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTY0IDQxNmw5NiA5NiAyNTYtMjU2TDE2MCAwIDY0IDk2bDE2MCAxNjBMNjQgNDE2eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+	background-position: center;
+	background-size: 22px auto;
+	background-repeat: no-repeat;
+	border: none;
+}

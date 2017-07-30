@@ -1,6 +1,6 @@
 /* globals module */
 
-let SEV1 = "error";
+const SEV1 = "error";
 let SEV2 = 1;
 let SEV3 = 1;
 const strict = false;
@@ -148,7 +148,7 @@ if (hasBabel) {
 		"prefer-destructuring": [SEV2, { object: true }],
 		"prefer-rest-params": hasBabel ? SEV2 : "off",
 
-		"import/no-unresolved": SEV1,
+		"import/no-unresolved": [SEV1, { caseSensitive: false }],
 		"import/named": SEV1,
 		"import/default": SEV1,
 		"import/no-absolute-path": SEV1,
